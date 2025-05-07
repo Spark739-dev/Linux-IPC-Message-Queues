@@ -21,18 +21,18 @@ Execute the C Program for the desired output.
 # PROGRAM:
 
 ## C program that receives a message from message queue and display them
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/ipc.h>
-#include <sys/msg.h>
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+    #include <sys/ipc.h>
+    #include <sys/msg.h>
 
-struct mesg_buffer {
+    struct mesg_buffer {
     long mesg_type;
     char mesg_text[100];
-} message;
+    } message;
 
-int main(int argc, char *argv[]) {
+    int main(int argc, char *argv[]) {
     key_t key;
     int msgid;
 
@@ -85,7 +85,7 @@ int main(int argc, char *argv[]) {
 
 ## OUTPUT
 
-
+![output](<Screenshot at 2025-05-07 08-30-15.png>)
 
 
 # RESULT:
