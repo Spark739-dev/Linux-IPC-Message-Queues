@@ -76,7 +76,7 @@ Execute the C Program for the desired output.
     }
 
     return 0;
-}
+    }
 
 
 
